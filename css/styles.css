@@ -1,0 +1,17 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+body {
+  width: 100vw;
+  height:46.9vw;
+  background-image: linear-gradient(aqua, purple);
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+#item1 {
+  
+}
+
