@@ -1,11 +1,5 @@
 // business logic
 
-let list = new To_Do_List();
-let list2 = new To_Do_List();
-let list3 = new To_Do_List();
-let list4 = new To_Do_List();
-let entryTasks = new List_Object("hop", "skip", "jump");
-list.addTask(entryTasks);
 
 
 
@@ -30,18 +24,16 @@ To_Do_List.prototype.markCompletion = function(check){
 // let list = new To_Do_List();
 // let entryTasks = new List_Object("hop", "skip", "jump");
 // list.addTask(entryTasks);
-console.log(list);
-console.log(list2);
-console.log(list3);
-console.log(list4);
-console.log(entryTasks);
+
 
 // user logic
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
     event.preventDefault();
     const person1Input = $("input#item1").val();
-
+    let thisList = List_Object(person1Input);
+    
     $(".userEntries").text(person1Input);
+    console.log(thisList);
   });
-}):
+});
